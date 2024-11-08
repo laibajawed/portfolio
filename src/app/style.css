@@ -1,238 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
-html{
-    Background-color: #222;
+.libre {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+* {
+  font: libre;
+}
+
+.card-section {
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
-.header, .footer {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 0;
-    background-color: #0d0d0d;
-    color: #e0e0e0;
-    font-size: 1.1rem;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
+html {
+  background-color: #222;
 }
 
-.header p, .footer p {
-    margin: 0;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
+.homecard {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(216, 207, 188);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  border-color: #000000;
 }
 
-.header p:hover, .footer p:hover {
-    color: #a26af4; /* Dark purple accent */
-    transform: scale(1.1);
+.homeh1 {
+  color: #080707;
+  text-align: center;
+  font-style: italic;
 }
 
+.header p {
+  font-size: 30px;
+}
 
+.header,
+.footer {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+  background-color: rgb(86, 84, 73);
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.header Link,
+.footer Link {
+  font-size: 30px;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header p:hover,
+.footer p :hover {
+  text-decoration: none;
+  color: #000000; /* Dark purple accent */
+  transform: scale(1.1);
+}
+
+.link {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
 
 .cardsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 5% auto;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 5% auto;
+  padding: 20px;
 }
 
 .cards {
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+  background-color: rgb(216, 207, 188);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .cards:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
 }
 
 .cards h2 {
-    color: #a26af4; /* Dark purple accent */
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+  font-weight: 700;
+  font-style: italic;
+  color: #0a0511; /* Dark purple accent */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .cards p {
-    color: #b3b3b3;
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 15px;
+  color: #080707;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 .cards a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .cards button {
-    background-color: #292929;
-    color: #e0e0e0;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  font-style: italic;
+  background-color: #292929;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cards button:hover {
-    background-color: #a26af4;
-    color: #ffffff;
-    transform: scale(1.05);
+  background-color: rgb(86, 84, 73);
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
-
-
 .about {
-    max-width: 1000px;
-    margin: 5% auto;
-    padding: 50px;
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 50px;
+  background-color: rgb(86, 84, 73);
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+  box-shadow: 0px 8px 30px rgba(13, 6, 6, 0.6);
 }
 
 .about h1 {
-    font-size: 2.4rem;
-    color: #a26af4; /* Cool dark purple */
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+  font-style: italic;
+  font-size: 2.4rem;
+  /* color: #000000;  */
+  color: rgb(216, 207, 188);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .about h2 {
-    font-size: 1.8rem;
-    color: #e0e0e0;
-    margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #a26af4;
-    display: inline-block;
-    padding-bottom: 8px;
+  font-style: italic;
+  font-size: 1.8rem;
+  /* color: #000000; */
+  color: rgb(216, 207, 188);
+  margin-top: 0;
+  margin-bottom: 0px;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 .about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #b3b3b3;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #000000;
+  font-style: italic;
 }
 
 .about h1:hover {
-    color: #d0a6ff;
 }
 
-
 .skills {
-    max-width: 800px;
-    margin: 5% auto;
-    padding: 40px;
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 40px;
+  background-color: rgb(216, 207, 188);
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
 }
 
 .skills h2 {
-    font-size: 2rem;
-    color: #a26af4; /* Dark purple */
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #a26af4;
-    padding-bottom: 10px;
-    display: inline-block;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000000; /* Dark purple */
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 .skills ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills li {
-    background-color: #292929;
-    color: #e0e0e0;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #292929;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-style: italic;
 }
 
 .skills li:hover {
-    background-color: #a26af4;
-    color: #ffffff;
-    transform: scale(1.05);
-    cursor: pointer;
+  background-color: rgb(86, 84, 73);
+  color: #ffffff;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .contact {
-    max-width: 800px;
-    margin: 5% auto;
-    padding: 40px;
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 40px;
+  background-color: rgb(86, 84, 73);
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
 }
 
 .contact h2 {
-    font-size: 2rem;
-    color: #a26af4; /* Dark purple accent */
-    margin-bottom: 20px;
-    border-bottom: 2px solid #a26af4;
-    display: inline-block;
-    padding-bottom: 10px;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #000000; /* Dark purple accent */
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .contact p {
-    font-size: 1.1rem;
-    color: #e0e0e0;
-    margin: 10px 0;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 10px 0;
+  font-style: italic;
 }
 
 .contact a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contact button {
-    background-color: #292929;
-    color: #e0e0e0;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #292929;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-style: italic;
 }
 
 .contact button:hover {
-    background-color: #a26af4;
-    color: #ffffff;
-    transform: scale(1.05);
+  background-color: rgb(86, 84, 73);
+  color: #ffffff;
+  transform: scale(1.05);
+  cursor: pointer;
 }
